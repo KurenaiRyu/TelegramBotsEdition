@@ -41,6 +41,20 @@ public class ChatMemberRestricted implements ChatMember {
     private static final String CANADDWEBPAGEPREVIEWS_FIELD = "can_add_web_page_previews";
     private static final String UNTILDATE_FIELD = "until_date";
 
+    private static final String JOINEDDATE_FIELD = "joined_date";
+    private static final String INVITER_FIELD = "inviter";
+
+    /**
+     * Unix timestamp, when has the user joined
+     */
+    @JsonProperty(JOINEDDATE_FIELD)
+    private Integer joinedDate;
+    /**
+     * The inviter
+     */
+    @JsonProperty(INVITER_FIELD)
+    private User inviter;
+
     /**
      * The member's status in the chat, always “restricted”
      */

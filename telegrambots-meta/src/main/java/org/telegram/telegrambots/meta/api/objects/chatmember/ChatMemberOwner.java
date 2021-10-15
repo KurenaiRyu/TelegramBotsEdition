@@ -33,6 +33,20 @@ public class ChatMemberOwner implements ChatMember {
     private static final String CUSTOMTITLE_FIELD = "custom_title";
     private static final String ISANONYMOUS_FIELD = "is_anonymous";
 
+    private static final String JOINEDDATE_FIELD = "joined_date";
+    private static final String INVITER_FIELD = "inviter";
+
+    /**
+     * Unix timestamp, when has the user joined
+     */
+    @JsonProperty(JOINEDDATE_FIELD)
+    private Integer joinedDate;
+    /**
+     * The inviter
+     */
+    @JsonProperty(INVITER_FIELD)
+    private User inviter;
+
     /**
      * The member's status in the chat, always “creator”
      */

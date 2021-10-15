@@ -16,4 +16,14 @@ import org.telegram.telegrambots.meta.api.objects.chatmember.serialization.ChatM
 public interface ChatMember extends BotApiObject {
     String getStatus();
     User getUser();
+
+    /**
+     * Unix timestamp, when has the user joined
+     */
+    Integer getJoinedDate();
+
+    /**
+     * The inviter
+     */
+    User getInviter();
 }
