@@ -29,6 +29,20 @@ public class ChatMemberMember implements ChatMember {
     private static final String STATUS_FIELD = "status";
     private static final String USER_FIELD = "user";
 
+    private static final String JOINEDDATE_FIELD = "joined_date";
+    private static final String INVITER_FIELD = "inviter";
+
+    /**
+     * Unix timestamp, when has the user joined
+     */
+    @JsonProperty(JOINEDDATE_FIELD)
+    private Integer joinedDate;
+    /**
+     * The inviter
+     */
+    @JsonProperty(INVITER_FIELD)
+    private User inviter;
+
     /**
      * The member's status in the chat, always “member”
      */

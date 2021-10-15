@@ -42,6 +42,20 @@ public class ChatMemberAdministrator implements ChatMember {
     private static final String CANINVITEUSERS_FIELD = "can_invite_users";
     private static final String CANPINMESSAGES_FIELD = "can_pin_messages";
 
+    private static final String JOINEDDATE_FIELD = "joined_date";
+    private static final String INVITER_FIELD = "inviter";
+
+    /**
+     * Unix timestamp, when has the user joined
+     */
+    @JsonProperty(JOINEDDATE_FIELD)
+    private Integer joinedDate;
+    /**
+     * The inviter
+     */
+    @JsonProperty(INVITER_FIELD)
+    private User inviter;
+
     /**
      * The member's status in the chat, always “administrator”
      */
