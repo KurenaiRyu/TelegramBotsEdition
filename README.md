@@ -1,5 +1,5 @@
 # Telegram Bot Enhance Edition
-![GitHub release (latest SemVer including pre-releases)](https://github.com/KurenaiRyu/TelegramBotsEnhanceEdition?include_prereleases)
+![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/KurenaiRyu/TelegramBotsEnhanceEdition?include_prereleases)
 
 在 [原项目](https://github.com/rubenlagus/TelegramBots) 基础上实现 [tdlight-telegram-bot-api](https://github.com/tdlight-team/tdlight-telegram-bot-api) bot 模式增强特性
 
