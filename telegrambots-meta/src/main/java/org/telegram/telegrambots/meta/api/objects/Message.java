@@ -95,6 +95,8 @@ public class Message implements BotApiObject {
     private static final String VOICECHATSCHEDULED_FIELD = "voice_chat_scheduled";
     private static final String ISAUTOMATICFORWARD_FIELD = "is_automatic_forward";
     private static final String CANBEFORWARDED_FIELD = "can_be_forwarded";
+    private static final String VIEWS_FIELD = "views";
+    private static final String FORWARDS_FIELD = "forwards";
 
     @JsonProperty(MESSAGEID_FIELD)
     private Integer messageId; ///< Integer	Unique message identifier
@@ -281,6 +283,11 @@ public class Message implements BotApiObject {
     @JsonProperty(CANBEFORWARDED_FIELD)
     private Boolean canBeForwarded; ///< Optional. True, if the message can be forwarded
 
+
+    @JsonProperty(VIEWS_FIELD)
+    private Integer views; ///< How many views has the message (usually the views are shown only for channel messages)
+    @JsonProperty(FORWARDS_FIELD)
+    private Integer forwards; ///< How many times the message has been forwarded
 
     public List<MessageEntity> getEntities() {
         if (entities != null) {

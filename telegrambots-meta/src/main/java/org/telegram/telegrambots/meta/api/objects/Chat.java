@@ -54,6 +54,18 @@ public class Chat implements BotApiObject {
     private static final String CHANNELCHATTYPE = "channel";
     private static final String SUPERGROUPCHATTYPE  = "supergroup";
 
+    private static final String ISVERIFIED_FIELD  = "is_verified";
+    private static final String ISSCAM_FIELD  = "is_scam";
+
+    /**
+     * Optional, default false. Is the chat verified by Telegram, clients show a verified batch
+     */
+    private boolean isVerified;
+    /**
+     * Optional, default false. Is the chat reported for scam, clients show a warning to the user
+     */
+    private boolean isScam;
+
     /**
      * Unique identifier for this chat.
      * This number may be greater than 32 bits and some programming languages may
