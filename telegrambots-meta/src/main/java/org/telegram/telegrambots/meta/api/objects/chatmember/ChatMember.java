@@ -27,14 +27,4 @@ public interface ChatMember extends BotApiObject {
      */
     User getInviter();
 
-    /**
-     * Unix timestamp, when has the user joined
-     */
-    Integer getJoinedDate();
-
-    /**
-     * The inviter
-     */
-    User getInviter();
-
 }
