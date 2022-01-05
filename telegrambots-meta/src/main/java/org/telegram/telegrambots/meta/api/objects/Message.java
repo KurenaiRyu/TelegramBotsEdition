@@ -98,6 +98,10 @@ public class Message implements BotApiObject {
     private static final String VIEWS_FIELD = "views";
     private static final String FORWARDS_FIELD = "forwards";
 
+    //enhanced
+    private static final String VIEWS_FIELD = "views";
+    private static final String FORWARDS_FIELD = "forwards";
+
     @JsonProperty(MESSAGEID_FIELD)
     private Integer messageId; ///< Integer	Unique message identifier
     @JsonProperty(FROM_FIELD)
@@ -283,6 +287,11 @@ public class Message implements BotApiObject {
     @JsonProperty(CANBEFORWARDED_FIELD)
     private Boolean canBeForwarded; ///< Optional. True, if the message can be forwarded
 
+    //enhanced
+    @JsonProperty(VIEWS_FIELD)
+    private Integer views; ///< How many views has the message (usually the views are shown only for channel messages)
+    @JsonProperty(FORWARDS_FIELD)
+    private Integer forwards; ///< How many times the message has been forwarded
 
     @JsonProperty(VIEWS_FIELD)
     private Integer views; ///< How many views has the message (usually the views are shown only for channel messages)

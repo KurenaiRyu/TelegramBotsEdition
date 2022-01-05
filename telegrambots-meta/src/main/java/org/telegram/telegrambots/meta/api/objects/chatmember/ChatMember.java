@@ -26,5 +26,4 @@ public interface ChatMember extends BotApiObject {
      * The inviter
      */
     User getInviter();
-
 }
